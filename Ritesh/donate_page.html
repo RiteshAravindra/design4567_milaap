@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Donate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="donate_page.css">
+    <script src="donation_page.js" async defer></script>
+
+    <!-- <link rel="stylesheet" href="donation_styling.css"> -->
+    <link rel="stylesheet" href="testing/index.css">
+    <link rel="stylesheet" href="../components/navbar_styling.css">
+    <script src=""></script>
+
+  </head>
+  <body>
+    <nav id="navbar">
+
+    </nav>
+    <div id="overlay">
+      <div id="donation_form_container">
+        <div id="donation_form_header">
+          <h3>Make a secure donation</h3>
+          <h4 id="close_button">❌</h4>
+        </div>
+        <hr id="donor_form_rule">
+        <form id="donation_form_complete">
+          <div class="to_be_flexed" id="donation_amount_input">
+            <div>
+              <p>Currency</p>
+              <h3>₹ INR</h3>
+            </div>
+            <div>
+              <label>Amount</label>
+              <input required type="tel" id="donation_amount" placeholder="Amount">
+            </div>
+          </div>
+          <div id="donation_tagline">
+            <p>Your donation can have a BIGGER impact, a sponsor will add an additional 10%.</p>
+          </div>
+          <div id="donation_tip_container">
+            <div>
+              <p>Milaap charges NO fees. We rely on donors like you to cover for our expenses. Kindly consider a tip. Thank you 🙏</p>
+            </div>
+            <div id="donation_tip_amount" class="to_be_flexed">
+              <p>Include a tip of</p>
+              <select name="donation_tip" id="donation_tip" onchange="tipChange()">
+                <option id="opt_1" value="0.08">8% (₹ 00.00)</option>
+                <option id="opt_2" value="0.10">10% (₹ 00.00)</option>
+                <option id="opt_3" value="0.12">12% (₹ 00.00)</option>
+                <option id="opt_4" value="0.15">15% (₹ 50.00)</option>
+                <option id="opt_5" value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <input required type="text" id="donor_name" placeholder="Name">
+          <div id="mulinp_div" class="to_be_flexed">
+            <select name="donor_country" id="donor_country">
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+            </select>
+            <input required type="tel" name="donor_mobile_number" placeholder="Phone number" id="donor_mobile_number">
+          </div>
+          <input required type="donor_email" placeholder="Email id" id="donor_email">
+
+          <div id="donor_nationality">
+            <div>
+              <input required type="radio" id="donor_nationality1" name="donor_nationality"><label for="donor_nationality1">I'm an Indian National</label>
+            </div>
+            <div>
+              <input required type="radio" id="donor_nationality2" name="donor_nationality"><label for="donor_nationality2">I'm not an Indian National</label>
+            </div>
+          </div>
+          <div id="submit_container">
+            <input required type="submit" name="confirm_donation" id="confirm_donation" value="Continue to pay ₹ 0">
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <div id="main_container">
+      <div id="left_section">
+        <div id="title">
+          <p>Milaap will not charge any dee on your donation to this campaign.</p>
+        </div>
+        <div id="fr_heading">
+          <h2 id="fr_title">placeholder Assam Needs</h2>
+        </div>
+        <div id="image_slideshow">
+        </div>
+        <div id="raised_info_section">
+          <div id="info">
+            <div class="raised">
+              <p id="raised_amount_left">Raised</p>
+            </div>
+            <div id="bottom">
+              <div id="raised_amount">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+          <div id="share_buttons">
+            <div class="share">
+              <img src="assets/share_button_wa.png" alt="">
+            </div>
+            <div class="share">
+              <img src="assets/share_button_fb.png" alt="">
+            </div>
+          </div>
+          <div id="additional">
+            <p><span>1.1x impact </span>10% of your contribution will be matched to raise the necessary funds for your campaign.</p>
+          </div>
+          <div id="story">
+            <div id="story_heading">
+                <p>Story</p>
+            </div>
+            <div id="story_content">
+              <h4>[All the contributions shall be used for Medicines, Doctors & Logistics for On-Site Medical/Health relief camps across affected areas in different districts of Assam, India.]</h4>
+              <p id="tale"></p>
+            </div>
+          </div>
+          <div id="start_fr">
+            <button id="create_new" onclick="redirect()">
+              Create a fundraiser
+            </button>
+          </div>
+      </div>
+      <div id="donation_section">
+        <div class="first" id="donate-supporters">
+          <div id="donation_left">
+            <img src="https://assets.milaap.org/assets/donate-icon-7cabb309d2c7a586a914c0a23abe52032aa0ce01115fb54e07c6148ab2cf8c6a.svg" alt="">
+            <p>Donate</p>
+          </div>
+          <a href="">60 supporters</a>
+        </div>
+        <div id="money_raised">
+          <div class="containerpb">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#37d123" />
+                  <stop offset="100%" stop-color="#37d123" />
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="100" r="25" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div id="information">
+            <p>Raised</p>
+            <p class="raised_amount">hello</p>
+          </div>
+        </div>
+        <div class="first" id="tax_benifit_section">
+          <p>Receive<span class="col_change"> tax benefits </span> by donating to this cause.</p>
+        </div>
+        <div class="first" id="instruction">
+          <p>Only <span class="col_change">INR donations</span> accepted towards this cause</p>
+        </div>
+        <div class="first" id="donate_button_div">
+          <button id="donate_button">Donate Now</button>
+        </div>
+        <div class="card_stuff">
+          <p>Card, Netbanking, Cheque pickups</p>
+          <p>Or <span class="col_change">Donate Using</span></p>
+          <div id="qr_code">
+            <img src="assets/qr_code_img.png" alt="">
+          </div>
+        </div>
+        <div id="online">
+          <img src="assets/o_pay_icons.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div id="footer_container_div"></div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "../components/navbar.js";
+  document.querySelector("#navbar").innerHTML = navbar()
+</script>
+
+<script src="donation_script.js"></script>
+<script>
+  function redirect(){
+    window.location.href = "../Aswal_Jith/fundraiser.html"
+  }
+</script>
