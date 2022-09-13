@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        *{
+            background-color: #9c3353;
+        }
+        #main{
+            
+            width: 70%;
+            height: 500px;
+            margin: auto;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 40px;
+        }
+        #logo{
+            
+            width: 30%;
+            background-color: white;
+        }
+        #logo>img{
+            margin-top: 40%;
+            margin-left: 80px;
+        }
+        #logo>h2{
+            padding-left: 70px;
+            background-color: white;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        #logo>p{
+            padding-left: 50px;
+            background-color: white;
+            font-size: 15px;
+            margin-top: -10px;
+            font-weight: lighter;
+        }
+        #midline{
+           
+            content: "";
+            width: 2px;
+            height: 500px;
+            background-image: linear-gradient(180deg,#fff,#e0e1e3 47%,#fff);
+            margin-left: -300px;
+        }
+        #form{
+            background-color: white;
+        }
+
+        #formbox{
+            background-color: white;
+        }
+        #formbox>p{
+            
+            margin-left: -50%;
+            margin-top: 60px;
+            width: 250px;
+            background-color: white;
+            text-align: center;
+        }
+        #name{
+            margin-left: -50%;
+            margin-top: 30px;
+            width: 350px;
+            background-color: white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #mail{
+            margin-left: -50%;
+            margin-top: 15px;
+            width: 350px;
+            background-color: white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #password{
+            margin-left: -50%;
+            margin-top: 15px;
+            width: 350px;
+            background-color: white;
+            border-top: 0px;
+            border-left: none;
+            border-right: none;
+            
+        }
+        #submit{
+            margin-left: -50%;
+            margin-top: 15px;
+            width: 350px;
+            height: 40px;
+            border-radius: 20px;
+            color: white;
+            font-size: medium;
+        }
+        #downbox{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -70%;
+            margin-top: 75px;
+            background-color: white;
+        }
+        #downbox>span{
+            background-color: white;
+            
+        }
+        #downbox>span>p{
+            background-color: white;
+            margin-left: -80px;
+        }
+        #downbox>span>button{
+            width: 80px;
+            height: 35px;
+            border-radius: 100px;
+            color: white;
+            font-size: medium;
+            margin-left: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id="logo">
+        <img src="../asset2/milanlogo.png" alt="Error">
+        <h2>Welcome to Milaap,</h2>
+        <p>India’s largest crowdfunding site</p>
+        </div>
+
+        <div id="midline"></div>
+
+        <div id="form">
+
+            <form action="" id="formbox">
+                <p>Sign up & manage fundraisers, donations & more</p>
+
+                <input type="text" placeholder="Full Name" id="name"><br><br>
+                <input type="email" placeholder="Email" id="mail"><br><br>
+                <input type="password" placeholder="Password" id="password"><br><br>
+                <input type="submit" placeholder="Sign-up" id="submit">
+            </form>
+
+            <div id="downbox">
+                <span><p>Already signed up with Milaap? </p></span>
+                <span><button>Login</button></span>
+                    
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
