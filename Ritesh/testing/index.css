@@ -1,0 +1,31 @@
+.containerpb
+{
+    width: 30px;
+    height: 30px;
+    margin-top: 60px;
+}
+
+circle
+{
+    border: 2px solid red;
+    fill: none;
+    stroke: #37d123;
+    stroke-width: 8px;
+    stroke-dasharray: 156;
+    stroke-dashoffset: 156;
+    animation:  anim 2s linear forwards;
+}
+svg
+{
+    position: absolute;
+    top: -25px;
+    left: 0%;
+}
+
+/* @keyframes anim
+{
+    100%
+    {
+        stroke-dashoffset: 0;
+    }
+} */
